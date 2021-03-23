@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterianaria Moine</title>
+    <link rel="shortcut icon" href="multimedia/logo.png" />
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/3a208e1600.js" crossorigin="anonymous"></script>
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!--Fonts Awesome-->
+    <script src="https://kit.fontawesome.com/3a208e1600.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <!----------Index.js-------------->
+    <script src="./index.js"></script>
+
+    <!--------------Info----------------->
+    <div class="info">
+        <div class="info__a-p-container">
+            <div class="info__adress">
+                <div class="info__adress__icon "><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info__adress__text">Moine 1513 - Bella Vista - San Miguel</div>
+            </div>
+            <div class="info__phone">
+                <div class="info__phone__icon "><i class="fas fa-phone"></i></div>
+                <div class="info__phone__text">11-4191-3170 // 11-4439-6283</div>
+            </div>
+        </div>
+        <div class="info__schedule">
+            <div class="info__schedule__icon i"><i class="far fa-clock"></i></div>
+            <div class="info__schedule__text">Lunes a sábado de 9:30 a 13:00 SIN TURNO<br>Por la tarde CON TURNO <b>11-4191-3170</b></div>
+        </div>
+    </div>
+    <!--------------------Responsive Info (>750px)------------------->
+    <div class="info-responsive">
+        <div class="info__adress info__item">
+            <div class="info__adress__icon "><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info__adress__text">Moine 1513 - Bella Vista - San Miguel</div>
+        </div>
+
+        <div class="info__schedule info__item">
+            <div class="info__schedule__icon i"><i class="far fa-clock"></i></div>
+            <div class="info__schedule__text">Lunes a sábado de 9:30 a 13:00 SIN TURNO<br>Por la tarde CON TURNO <b>11-4191-3170</b></div>
+        </div>
+        <div class="info__phone info__item">
+            <div class="info__phone__icon "><i class="fas fa-phone"></i></div>
+            <div class="info__phone__text">11-4191-3170 // 11-4439-6283</div>
+        </div>
+    </div>
+    <!------Header------>
+    <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li>
+                    <a href="path/services.html">
+                        <i class="fas fa-notes-medical">
+                            </i>Servicios</a>
+                </li>
+
+                <li>
+                    <a href="#us-anchor" onclick="closeNav()">
+                        <i class="fas fa-user-friends">
+                            </i>Conocenos</a>
+                </li>
+
+                <li>
+                    <a href="#find-us-anchor" onclick="closeNav()">
+                        <i class="fas fa-search-location">
+                            </i>Encontranos</a>
+
+                </li>
+                </div>
+            </ul>
+        </nav>
+        <div class="open-menu-container">
+            <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            </label>
+        </div>
+        <nav class="responsive-nav">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <div>
+                    <li>
+                        <a href="path/services.html">
+                            <i class="fas fa-notes-medical">
+                                </i>Servicios</a>
+                    </li>
+
+                    <li>
+                        <a href="#us-anchor">
+                            <i class="fas fa-user-friends">
+                                </i>Conocenos</a>
+                    </li>
+
+                    <li>
+                        <a href="#find-us-anchor">
+                            <i class="fas fa-search-location">
+                                </i>Encontranos</a>
+
+                    </li>
+                </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1>
+        <div class="cover">
+            <div class="cover__img"><img src="multimedia/logo.png" alt="Logo veterinaria moine"></div>
+            <div class="cover__text">
+                <div class="cover__text__vet">Veterinaria</div>
+                <div class="cover__text__title">Moine</div>
+            </div>
+        </div>
+    </h1>
+    <!------Services------>
+    <a href="path/services.html">
+        <div class="body-container">
+            <section>
+                <div class="container-services">
+                    <div class="container-services__item clinica-box">
+                        <div class="inside-box">
+                            <div>Clínica</div>
+                        </div>
+                    </div>
+                    <div class="container-services__item cirugia-general-box">
+                        <div class="inside-box">
+                            <div>Cirugía General</div>
+                        </div>
+                    </div>
+
+                    <div class="container-services__item neurocirugia-box">
+                        <div class="inside-box">
+                            <div>Neurocirugía</div>
+                        </div>
+                    </div>
+
+                    <div class="container-services__item traumatologia-box">
+                        <div class="inside-box">
+                            <div>Traumatología y Ortopedia</div>
+                        </div>
+                    </div>
+                </div>
+    </a>
+    </section>
+    <!------Us------>
+    <section>
+        <div class="container-us" id="us-anchor">
+            <div class="container-us__persons">
+                <div class="container-us__profile">
+
+                    <div class="container-us__profile__name">
+                        <h3>Mariel Rodriguez</h3>
+                    </div>
+                    <div class="container-us__profile__img"><img src="multimedia/mariel.jfif" alt="Mariel Rodriguez">
+                    </div>
+                    <div class="container-us__line"></div>
+                    <div class="container-us__profile__text">Clínica con amplia experiencia en Clínica médica y quirúrgica y Anestesiología.</div>
+                </div>
+                <div class="container-us__profile">
+                    <div class="container-us__profile__name">
+                        <h3>Gustavo Carretto</h3>
+                    </div>
+                    <div class="container-us__profile__img"><img src="multimedia/gustavo.jpg" alt="Gustavo Carretto"></div>
+                    <div class="container-us__line"></div>
+                    <div class="container-us__profile__text">Cirujano del Hospital Escuela y Docente de la Facultad de Ciencias Veterinarias de la UBA.</div>
+
+                </div>
+            </div>
+            <div class="responsive-container-us__persons">
+                <div class="container-us__profile">
+                    <div>
+                        <div class="container-us__profile__name">
+                            <h3>Mariel Rodriguez</h3>
+                        </div>
+                        <div class="container-us__profile__img"><img src="multimedia/mariel.jfif" alt="Mariel Rodriguez">
+                        </div>
+                    </div>
+
+                    <div class="container-us__line"></div>
+                    <div class="container-us__profile__text">Clínica con amplia experiencia en Clínica médica y quirúrgica y Anestesiología.</div>
+                </div>
+                <div class="container-us__profile">
+                    <div class="gus-container">
+                        <div class="container-us__profile__name">
+                            <h3>Gustavo Carretto</h3>
+                        </div>
+                        <div class="container-us__profile__img"><img src="multimedia/gustavo.jpg" alt="Gustavo Carretto"></div>
+                    </div>
+
+                    <div class="container-us__line"></div>
+                    <div class="container-us__profile__text gus">Cirujano del Hospital Escuela y Docente de la Facultad de Ciencias Veterinarias de la UBA.</div>
+
+                </div>
+            </div>
+            <div class="container-us__text">Tenemos 25 años de trayectoria y experiencia especializandonos en Clínica, Cirugia General, Traumatología y Ortopedia y Neurocirugía.</div>
+            <div class="container-us__line"></div>
+        </div>
+    </section>
+
+    <!------Extras------>
+    <section>
+        <div class="extra">
+            <a href="path/cases.html" class="extra__cases">
+                <div class="inside-box">
+                    <div>Segundas oportunidades</div>
+                </div>
+            </a>
+            <a href="path/galery.html" class="extra__galery">
+                <div class="inside-box">
+                    <div>Nuestros Pacientes y Amigos</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!------Find-Us------>
+    <section id="find-us-anchor">
+        <div class="container-find-us">
+            <div class="container-find-us__text">
+                <div class="container-find-us__text__title"><b><h2>Encontranos</h2></b></div>Estamos ubicados en Bella Vista, sobre la calle Moine, entre A. Piñero y Av. Tte. Gral. Ricchieri, a media cuadra de la estación de trenes San Martín.</div>
+            <div class="container-find-us__map">
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.435894808287!2d-58.685469122221754!3d-34.563003664041105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc35f7b95cf9%3A0xa72a31907f3d21f7!2sVeterinaria%20Mo%C3%ADne!5e0!3m2!1ses-419!2sar!4v1613243831889!5m2!1ses-419!2sar"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!------Footer------>
+    <footer>
+        <div class="container-contact footer">
+            <div class="contact footer">
+                <div class="contact__title footer">INFORMACIÓN DE CONTACTO</div>
+                <ul class="footer">
+                    <li class="footer"><b>Dirección</b><br> Moine 1513 (Bella Vista - San Miguel)
+                    </li>
+                    <li class="footer"><b>Teléfonos</b><br>11-4191-3170 <br>11-4439-6283</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="final-info">
+            <div class="rights footer violet">2021 Copyright © Veterinaria Moine</div>
+            <div class="dev footer violet">Desarrollado por Julián A. Carretto</div>
+        </div>
+    </footer>
+</body>
+
+</html>
